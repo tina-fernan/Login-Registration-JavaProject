@@ -48,7 +48,7 @@ public class CustomerDAOImp implements CustomerDAO
 			ResultSet rs=ps.executeQuery();
 			while(rs.next())
 			{
-				c.setName(rs.getString(1));
+				c.setUsername(rs.getString(1));
 				c.setPassword(rs.getString(2));
 				c.setName(rs.getString(3));
 				

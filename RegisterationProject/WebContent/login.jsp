@@ -7,9 +7,15 @@
 <title>Insert title here</title>
 </head>
 <body>
-<form action="LoginRegister">
+<form action="LoginRegister" method="post">
 <table
  style= "background-color: lightgreen; margin-left: 20px; margin-left: 20px;">
+ <tr>
+     <td><h3 style="color:red;">${message} </h3>
+     <h3 style="color:green;">${successMessage} </h3>
+     </td>
+     <td></td>
+ </tr>
 <tr>
 <td><h3 style=" color:darkblue">Login Page</h3></td>
 <td></td>
@@ -19,7 +25,7 @@
 <td><input type="text" name="name"></td>
 </tr>
 <tr><td> Password : </td>
-<td><input type="password" name="password"></td>
+<td><input type="password" name="password1"></td>
 </tr>
 <tr>
 <td><input type="submit" name="submit" value="login"> </td>
